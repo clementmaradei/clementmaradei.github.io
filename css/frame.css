@@ -1,4 +1,5 @@
 html,
+
 body {
   margin: 0;
   padding: 0;
@@ -1518,4 +1519,19 @@ ol.nested>li:before {
     flex: 1 0 100%;
     max-width: 100%;
   }
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Exemple : changer aussi le fond du menu si besoin */
+body.dark-mode .menu {
+  background-color: #1e1e1e;
+}
+
+/* Ajuster les liens */
+body.dark-mode a {
+  color: #90caf9;
 }
