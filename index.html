@@ -43,13 +43,15 @@
   const toggle = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Appliquer la préférence sauvegardée
+  console.log('toggle button:', toggle); // test : vérifie que le bouton est bien trouvé
+
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     toggle.textContent = '☀️';
   }
 
   toggle.addEventListener('click', () => {
+    console.log('click!'); // test : si ça ne s’affiche pas, le clic ne marche pas
     body.classList.toggle('dark-mode');
     const isDark = body.classList.contains('dark-mode');
     toggle.textContent = isDark ? '☀️' : '🌙';
