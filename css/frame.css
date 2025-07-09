@@ -1521,39 +1521,3 @@ ol.nested>li:before {
   }
 }
 
-/* Forcer le mode clair */
-body:not(.dark-mode) {
-  background-color: white !important;
-  color: black !important;
-}
-
-/* Forcer les liens en mode clair */
-body:not(.dark-mode) a {
-  color: blue !important;
-}
-
-/* Forcer le mode sombre */
-body.dark-mode {
-  background-color: #121212 !important;
-  color: #eee !important;
-}
-
-/* Forcer les liens en mode sombre */
-body.dark-mode a {
-  color: #90caf9 !important;
-}
-
-/* Forcer les couleurs de fond et texte des éléments courants */
-body.dark-mode p,
-body.dark-mode div,
-body.dark-mode span,
-body.dark-mode section,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
-  color: #eee !important;
-  background-color: transparent !important;
-}
